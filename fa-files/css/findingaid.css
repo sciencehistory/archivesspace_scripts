@@ -1,0 +1,118 @@
+body {
+  position: relative;
+}
+
+.topLogo {
+    height: 120px;
+	line-height: 120px;
+    background-image: url(logo_lg.jpg);
+    background-repeat: repeat-x;
+    width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+.topLogo img {
+   margin-top: 20px;
+   margin-left: 10px;
+}
+
+/*
+.navbar-header {
+  line-height: 56px;
+  font-family: 'League Gothic';
+  font-size: 40px;
+  color: #fff;
+  float: none;
+}
+
+.navbar-header img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+.navbar-uh {
+  border-radius: 0;
+  background-color: #1f2534;
+  height: 120px;
+}
+
+
+.navbar-brand {
+  padding: 0 15px;
+}
+
+*/
+.list-group.affix {
+  width: 284px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus  {
+  color: #555;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#listings ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+#listings li {
+  font-weight: normal;
+  /*changed from bold to normal*/
+}
+
+#listings li .desc {
+  font-weight: normal;
+  font-size: 90%;
+  font-color: #777;
+}
+
+.has-children {
+  cursor: pointer;
+}
+
+.has-children:before {
+  content: "\f196"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.has-children.open:before {
+  content: "\f147";
+}
+
+.digital-object-link {
+  margin-left: 15px;
+}
+
+.digital-object-link .small {
+  margin-left: 5px;
+}
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #1f2534;
+  color: #fff;
+  text-align: center;
+
+}
+
