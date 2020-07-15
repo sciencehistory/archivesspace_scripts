@@ -1,4 +1,4 @@
-# Science History Institte ArchivesSpace Scripts
+# Science History Institute ArchivesSpace Scripts
 
 ## About 
 
