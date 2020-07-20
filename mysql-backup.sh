@@ -4,13 +4,13 @@
 # dumps the ArchivesSpace database to a location where it can be harvested by the
 # backup scripts on Dubnium.
 
-
+# get the passwords:
 source ./script_settings.sh
-#TODO: investigate what the deal is with this:
 OUTPUT_PATH=/backup/aspace-backup.sql
-OUTPUT_PATH=/backups/mysql-backup/archivesspace_backup.sql
+
+# dump:
 mysqldump \
     archivesspace -C \
     --password=$DATABASE_BACKUP_PASSWORD \
     --user=$DATABASE_BACKUP_USER \
-    > /backups/mysql-backup/archivesspace_backup.sql
+    > $OUTPUT_PATH
