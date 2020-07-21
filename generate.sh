@@ -8,7 +8,7 @@
 EXPORTLOCATION=/exports/data/ead/
 EAD=$(find $EXPORTLOCATION -type f)
 WEBDIR=/var/www/html
-STYLESHEET=/home/ubuntu/bin/fa-files/findingaid.xsl
+STYLESHEET=fa-files/findingaid.xsl
 DATE=$(date +%Y-%m-%d-%H:%M)
 
 for e in $EAD;
