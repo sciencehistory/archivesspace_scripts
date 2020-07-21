@@ -1,5 +1,5 @@
 echo "Checking that ArchivesSpace is running"
-if [[ $(service archivesspace status | grep active) ]]; then
+if [[ $(service archivesspace status | grep '\sactive') ]]; then
     echo "ArchivesSpace is running."
 else
     echo "ArchivesSpace is not running."
