@@ -3,6 +3,7 @@
 # This script, called regularly by the ubuntu user's crontab,
 # dumps the ArchivesSpace database to a location where it can be harvested by the
 # backup scripts on Dubnium.
+cd /home/ubuntu/archivesspace_scripts
 
 # get the passwords:
 source ./script_settings.sh
