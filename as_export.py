@@ -163,7 +163,7 @@ def handleAssociatedDigitalObject(digital_object, resourceId, d, headers):
 
 
 def describe_resource(resource):
-    return "%s:%s %s" % (resource['id_0'], resource['id_1'], resource['finding_aid_title'])
+    return "%s:%s %s" % (resource['id_0'].encode('utf-8'), resource['id_1'].encode('utf-8'), resource['finding_aid_title'].encode('utf-8'))
         
 #Looks for all resource records starting with a given prefix
 def findAllLibraryResources(headers, prefix):
