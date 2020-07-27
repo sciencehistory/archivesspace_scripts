@@ -33,5 +33,5 @@ echo "Checking that all xml is valid:"
 echo "Files are now available for harvest at https://archives.sciencehistory.org/ead/".
 
 echo "Logs are at:"
-echo "/home/ubuntu/bin/log.txt"
+echo "/home/ubuntu/archivesspace_scripts/log.txt"
 echo "/var/log/findingaid/findingaid.log"
