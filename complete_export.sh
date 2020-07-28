@@ -1,3 +1,8 @@
+DIRECTORY_INSTALLED=/home/ubuntu/archivesspace_scripts
+
+cd $DIRECTORY_INSTALLED
+
+echo "Starting complete export on `date`"
 echo "Checking that ArchivesSpace is running..."
 if [[ $(service archivesspace status | grep '\sactive') ]]; then
     echo "ArchivesSpace is running."
@@ -18,7 +23,7 @@ fi
 echo "Creating directories and installng software, if needed:"
 ./setup.sh
 
-echo "Exporitng just 2012:"
+echo "Exporting just 2012:"
 python as_export.py --prefix 2012
 
 echo "Complete export:"
@@ -33,5 +38,6 @@ echo "Checking that all xml is valid:"
 echo "Files are now available for harvest at https://archives.sciencehistory.org/ead/".
 
 echo "Logs are at:"
-echo "/home/ubuntu/archivesspace_scripts/log.txt"
+
+echo "$DIRECTORY_INSTALLED/log.txt"
 echo "/var/log/findingaid/findingaid.log"
