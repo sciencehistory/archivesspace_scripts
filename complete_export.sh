@@ -4,7 +4,7 @@ cd $DIRECTORY_INSTALLED
 
 echo "Starting complete export on `date`"
 echo "Checking that ArchivesSpace is running..."
-if [[ $(service archivesspace status | grep '\sactive') ]]; then
+if systemctl is-active --quiet archivesspace; then
     echo "ArchivesSpace is running."
 else
     echo "ArchivesSpace is not running."
@@ -13,7 +13,7 @@ else
 fi
 
 echo "Checking that ubuntu is part of group www-data..."
-if [[ $( groups | grep www-data ) ]]; then
+if groups | grep -q '\bwww-data\b'; then
     echo "ubuntu is part of www-data."
 else
     echo "User ubuntu is not part of group www-data. This script will not be able to write to the web directories."
