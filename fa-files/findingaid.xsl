@@ -16,10 +16,10 @@
 	   <!-- will not work in production, need to be updated with directories-->
         <title><xsl:value-of select="ead:archdesc/ead:did/ead:unittitle" /></title>
         <link rel="icon" type="../image/png" href="../img/favicon.ico" />
-        <link rel="stylesheet" href="font-awesome.min.css" />
-        <link rel="stylesheet" href="bootstrap.css" />
-        <link rel="stylesheet" href="findingaid.css" />
-        <link rel="stylesheet" href="uh-webfonts.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/findingaid.css" />
+        <link rel="stylesheet" href="css/uh-webfonts.css" />
 		<!--<link rel="stylesheet" href="../css/footer.scss"/>-->
         <script src="jquery-1.12.3.min.js"></script>
         <script src="bootstrap.min.js"></script>
