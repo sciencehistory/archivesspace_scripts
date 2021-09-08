@@ -29,7 +29,7 @@
           <div class="header">
 		   <a href="https://www.sciencehistory.org/othmer-library">
 			  <div class="topLogo">
-				<img alt="Science History Institute and Othmer Library logos" src="library_header.png"/>
+				<img alt="Science History Institute and Othmer Library logos" src="website-files/img/library_header.png"/>
 				</div>
               </a>
         </div>
