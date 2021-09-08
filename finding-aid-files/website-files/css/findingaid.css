@@ -2,23 +2,28 @@ body {
   position: relative;
 }
 
+.header{
+    height: 220px;
+	margin-right: auto;
+    margin-left: auto;
+	background-color: #050939;
+	padding: 0px;
+	}
 .topLogo {
-    height: 120px;
-	line-height: 120px;
-    background-image: url(logo_lg.jpg);
-    background-repeat: repeat-x;
-    width: 100%;
-	margin-left: auto;
     margin-right: auto;
-    padding: 0px;
-}
-.topLogo img {
-   margin-top: 20px;
-   margin-left: 10px;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+	background-color: #050939;
 }
 
-/*
-.navbar-header {
+.topLogo img {
+   width: 100%
+   height: auto;
+}
+
+
+/*.navbar-header {
   line-height: 56px;
   font-family: 'League Gothic';
   font-size: 40px;
@@ -110,7 +115,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #1f2534;
+  background-color: #050939;
   color: #fff;
   text-align: center;
 

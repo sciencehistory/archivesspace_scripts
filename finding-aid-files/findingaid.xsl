@@ -10,33 +10,32 @@
   <xsl:output method="html"
               encoding="UTF-8"
               indent="yes" />
-
   <xsl:template match="/*">
     <html>
        <head>
+	   <!-- will not work in production, need to be updated with directories-->
         <title><xsl:value-of select="ead:archdesc/ead:did/ead:unittitle" /></title>
         <link rel="icon" type="../image/png" href="../img/favicon.ico" />
-        <link rel="stylesheet" href="../css/font-awesome.min.css" />
-        <link rel="stylesheet" href="../css/bootstrap.css" />
-        <link rel="stylesheet" href="../css/findingaid.css" />
-        <link rel="stylesheet" href="../css/uh-webfonts.css" />
+        <link rel="stylesheet" href="website-files/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="website-filescss/bootstrap.css" />
+        <link rel="stylesheet" href="website-filescss/findingaid.css" />
+        <link rel="stylesheet" href="website-filescss/uh-webfonts.css" />
 		<!--<link rel="stylesheet" href="../css/footer.scss"/>-->
-        <script src="../js/jquery-1.12.3.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        <script src="../js/findingaid.js"></script>
+        <script src="website-filesjs/jquery-1.12.3.min.js"></script>
+        <script src="website-filesjs/bootstrap.min.js"></script>
+        <script src="website-filesjs/findingaid.js"></script>
       </head>
       <body>
           <div class="header">
 		   <a href="https://www.sciencehistory.org/othmer-library">
 			  <div class="topLogo">
-				<img align="left" alt="Othmer Library logo" src="../img/library_header_logo.png"/>
-				<img align="right" alt="Othmer Library name" src="../img/library_header_name.png"/>
+				<img alt="Science History Institute and Othmer Library logos" src="website-files/img/library_header.png"/>
 				</div>
               </a>
         </div>
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-3">
+            <div align="left" class="col-md-3">
               <div id="sidebar-menu" class="list-group">
                 <a href="#overview" class="list-group-item">Overview</a>
 				<a href="#bioghist" class="list-group-item">Background</a>
@@ -67,7 +66,7 @@
       </body>
     </html>
   </xsl:template>
-
+  
   <!-- OVERVIEW -->
   <xsl:template match="ead:archdesc/ead:did">
     <h1><xsl:value-of select="ead:unittitle" />, <xsl:value-of select="ead:unitdate" /></h1>
