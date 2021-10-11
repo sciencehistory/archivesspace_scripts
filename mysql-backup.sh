@@ -12,6 +12,7 @@ OUTPUT_PATH=/backup/aspace-backup.sql
 # dump:
 mysqldump \
     archivesspace -C \
+    --no-tablespaces \
     --password=$DATABASE_BACKUP_PASSWORD \
     --user=$DATABASE_BACKUP_USER \
     > $OUTPUT_PATH
