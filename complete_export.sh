@@ -4,7 +4,8 @@ cd $DIRECTORY_INSTALLED
 
 echo "Starting complete export on `date`"
 echo "Checking that ArchivesSpace is running..."
-if systemctl is-active --quiet archivesspace; then
+
+if /opt/archivesspace/archivesspace.sh status | grep -q 'running'; then
     echo "ArchivesSpace is running."
 else
     echo "ArchivesSpace is not running."
