@@ -13,23 +13,21 @@
   <xsl:template match="/*">
     <html>
        <head>
-	   <!-- will not work in production, need to be updated with directories-->
         <title><xsl:value-of select="ead:archdesc/ead:did/ead:unittitle" /></title>
         <link rel="icon" type="../image/png" href="../img/favicon.ico" />
-        <link rel="stylesheet" href="website-files/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="website-filescss/bootstrap.css" />
-        <link rel="stylesheet" href="website-filescss/findingaid.css" />
-        <link rel="stylesheet" href="website-filescss/uh-webfonts.css" />
-		<!--<link rel="stylesheet" href="../css/footer.scss"/>-->
-        <script src="website-filesjs/jquery-1.12.3.min.js"></script>
-        <script src="website-filesjs/bootstrap.min.js"></script>
-        <script src="website-filesjs/findingaid.js"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/findingaid.css" />
+        <link rel="stylesheet" href="css/uh-webfonts.css" />
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/findingaid.js"></script>
       </head>
       <body>
           <div class="header">
 		   <a href="https://www.sciencehistory.org/othmer-library">
 			  <div class="topLogo">
-				<img alt="Science History Institute and Othmer Library logos" src="website-files/img/library_header.png"/>
+				<img alt="Science History Institute and Othmer Library logos" src="img/library_header.png"/>
 				</div>
               </a>
         </div>
