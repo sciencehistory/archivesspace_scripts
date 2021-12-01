@@ -143,7 +143,7 @@
       </div>
       <div class="panel-body">
         <ul>
-          <xsl:for-each select="ead:controlaccess/*[@source='lcsh']">
+          <xsl:for-each select="ead:controlaccess/*">
             <li><xsl:value-of select="." /></li>
           </xsl:for-each>
         </ul>
