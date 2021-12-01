@@ -235,12 +235,16 @@
   <xsl:template match="ead:c[@level='file' or @level='item']">
     <xsl:for-each select=".">
         <ul class="physloc">
-            <li>
+           <li>
               Box 
 			  <xsl:value-of select="ead:did/ead:container[@type='box']" />,
               <xsl:if test="ead:did/ead:container[@type='folder']">
 			  folder 
 			  <xsl:value-of select="ead:did/ead:container[@type='folder']"/>; 
+			  </xsl:if>
+			  <xsl:if test="ead:did/ead:container[@type='object']">
+			  object
+			  <xsl:value-of select="ead:did/ead:container[@type='object']"/>;
 			  </xsl:if>
               <xsl:value-of select="ead:did/ead:unittitle"/>
               (<xsl:value-of select="ead:did/ead:unitdate"/>)
