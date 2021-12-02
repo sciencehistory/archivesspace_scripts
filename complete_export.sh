@@ -21,14 +21,28 @@ else
     exit
 fi
 
+jq --version > /dev/null
+if [ $? -eq 0 ]; then
+    echo "jq is installed."
+else
+    echo "jq is not installed."
+    exit
+fi
+
+xmlstarlet --version > /dev/null
+if [ $? -eq 0 ]; then
+    echo "xmlstarlet is installed."
+else
+    echo "xmlstarlet is not installed."
+    exit
+fi
+
+
 echo "Creating directories and installng software, if needed:"
 ./setup.sh
 
-echo "Exporting just 2012:"
-python as_export.py --prefix 2012
-
-echo "Complete export:"
-python as_export.py
+echo "Exporting EADs."
+./export_eads.sh
 
 echo "Converting to HTML:"
 sudo ./generate.sh
