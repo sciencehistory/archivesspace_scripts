@@ -1,9 +1,11 @@
 # requires xmlstarlet to parse xml
 # requires jq to parse json
 
-source ../script_settings.sh
+source script_settings.sh
 OUTPUT_DIR=/exports/data/ead
 API_URL=archives.sciencehistory.org:8089
+#API_URL=localhost:8089
+
 SESSION=`curl -s  -F password="$EXPORT_PASSWORD" $API_URL/users/$EXPORT_USER/login |  jq -r '.session'`
 IDS=`curl -s -H "X-ArchivesSpace-Session: $SESSION" $API_URL/repositories/$REPOSITORY_ID/resources?all_ids=true |  jq -c '.[] ' `
 MANIFEST_FILE=$OUTPUT_DIR/manifest.txt
