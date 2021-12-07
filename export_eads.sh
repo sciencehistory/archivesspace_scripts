@@ -19,7 +19,7 @@ for ID in $IDS; do
 
 	# Retrieve the EAD and save it at the new filename:
 	curl -s -H "X-ArchivesSpace-Session: $SESSION" \
-		$API_URL/repositories/$REPOSITORY_ID/resource_descriptions/$ID.xml \
+		$API_URL/repositories/$REPOSITORY_ID/resource_descriptions/$ID.xml?include_daos=true \
 		> $OUTPUT_DIR/$NEW_FILENAME
 
 	# Get the title out of the EAD
