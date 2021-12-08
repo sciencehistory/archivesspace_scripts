@@ -4,9 +4,8 @@
 # and places the resulting items in /var/www/html and /var/www/html/ead
 #
 
-
-EXPORTLOCATION=/exports/data/ead/
-EAD=$(find $EXPORTLOCATION -type f)
+EXPORTLOCATION=/var/www/html/new_ead
+EAD=$(ls $EXPORTLOCATION/*.xml )
 WEBDIR=/var/www/html
 STYLESHEET=finding-aid-files/findingaid.xsl
 DATE=$(date +%Y-%m-%d-%H:%M)
@@ -21,7 +20,6 @@ for e in $EAD;
       &>> /var/log/findingaid/findingaid.log \
       && echo "Successful generation of $e" >> /var/log/findingaid/findingaid.log \
 	  || echo "Generation for $e failed" >> /var/log/findingaid/findingaid.log
-  cp $e $WEBDIR/ead/scihist-$FILENAME.xml
 
 done
 
