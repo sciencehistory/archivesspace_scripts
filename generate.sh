@@ -1,7 +1,7 @@
 #! /bin/bash
 #
-# Takes the content of /exports/data/ead/, runs them through the finding aid stylesheet
-# and places the resulting items in /var/www/html and /var/www/html/ead
+# Takes the content of /exports/data/new_ead/, runs them through the finding aid stylesheet
+# and places the resulting items in /var/www/html.
 #
 
 EXPORTLOCATION=/var/www/html/new_ead
@@ -23,4 +23,5 @@ for e in $EAD;
 
 done
 
+sudo chmod -R 775 $WEBDIR
 sudo chown -R  www-data:www-data $WEBDIR
