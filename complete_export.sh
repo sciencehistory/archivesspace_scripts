@@ -47,12 +47,10 @@ echo "Exporting EADs."
 echo "Converting to HTML:"
 sudo ./generate.sh
 
-
 echo "Checking that all xml is valid:"
 ./xml-validator.sh
 echo "Files are now available for harvest at https://archives.sciencehistory.org/ead/".
 
 echo "Logs are at:"
 
-echo "$DIRECTORY_INSTALLED/log.txt"
 echo "/var/log/findingaid/findingaid.log"
