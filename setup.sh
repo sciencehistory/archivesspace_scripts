@@ -1,6 +1,6 @@
 # These commands can be removed from here and
 # added to the Ansible script for aspace.
-sudo mkdir -p  /var/www/html/ead/ /var/www/html/new_ead/ /var/log/findingaid/
+sudo mkdir -p  /var/www/html/
 
 sudo chown -R ubuntu:ubuntu /var/log/findingaid/
 
