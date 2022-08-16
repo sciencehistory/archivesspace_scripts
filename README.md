@@ -1,9 +1,14 @@
 # Science History Institute ArchivesSpace Scripts
 
+# Important
+This code is no longer used and the repository was archived in August 2022.
+Backups are being provided by our ArchivesSpace third party provider.
+EAD harvest is being managed by https://github.com/sciencehistory/export_archivesspace_xml .
+
 ## About 
 
-* This is a collection of scripts we use to manage and back up our ArchivesSpace instance.
-* It does two main things:
+* This was a collection of scripts we use to manage and back up our ArchivesSpace instance.
+* It did two main things:
 1. Allow our EADs to be harvested over HTTP by peer institutions.
 2. Provide scripts for a cronjob to back up our ArchivesSpace data.
 
